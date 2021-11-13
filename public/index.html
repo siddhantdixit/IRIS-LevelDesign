@@ -12,23 +12,21 @@
     <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-md w-full space-y-8">
           <div>
-            <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow">
+            <!-- <img id="mylogo" class="mx-auto h-12 w-auto" src="https://icons.getbootstrap.com/assets/icons/robot.svg" alt="Workflow"> -->
+            <svg class="mx-auto h-12 w-auto" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4f46e5" class="bi bi-robot" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2V1.866ZM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5Zm-8 5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5ZM3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.58 26.58 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.933.933 0 0 1-.765.935c-.845.147-2.34.346-4.235.346-1.895 0-3.39-.2-4.235-.346A.933.933 0 0 1 3 9.219V8.062Zm4.542-.827a.25.25 0 0 1 .182.135l.842 1.7.754-.785a.25.25 0 0 1 .166-.076 24.85 24.85 0 0 0 1.98-.19.25.25 0 0 1 .068.496 25.29 25.29 0 0 1-1.922.187l-.932.971a.25.25 0 0 1-.404-.062l-.847-1.71-.754.736a.25.25 0 0 1-.189.07 25.36 25.36 0 0 1-2.02-.192.25.25 0 1 1 .068-.495c.512.07 1.143.138 1.87.182l.921-.9a.25.25 0 0 1 .217-.067Z"/>
+            </svg>
             <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
-              Sign in to your account
+              IRIS
             </h2>
-            <p class="mt-2 text-center text-sm text-gray-600">
-              Or
-              <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
-                start your 14-day free trial
-              </a>
-            </p>
+
           </div>
           <form class="mt-8 space-y-6" action="#" method="POST">
             <input type="hidden" name="remember" value="true">
             <div class="rounded-md shadow-sm -space-y-px">
               <div>
                 <label for="email-address" class="sr-only">Email address</label>
-                <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Email address">
+                <input id="email-address" name="email" type="text" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Username">
               </div>
               <div>
                 <label for="password" class="sr-only">Password</label>
@@ -62,6 +60,32 @@
                 Sign in
               </button>
             </div>
+
+            <div>
+              <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                  <!-- Heroicon name: solid/lock-closed -->
+                  <!-- <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+                  </svg> -->
+                  <!-- <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                    <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                  </svg> -->
+                  <svg  class="h-5 w-5 text-red-500 group-hover:text-red-400" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" />
+                  </svg>
+                </span>
+                Register
+              </button>
+            </div>
+
+            <p class="mt-2 text-center text-sm text-gray-600">
+              
+              <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+                Report an issue
+              </a>
+            </p>
+            
           </form>
         </div>
       </div>

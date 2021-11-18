@@ -1,8 +1,8 @@
 module.exports = {
   purge: [
-    './public/**/*.html',
-    './public/**/*.vue',
-    './public/**/*.jsx',
+    './public/gamedesign/**/*.html',
+    './public/gamedesign/**/*.vue',
+    './public/gamedesign/**/*.jsx',
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
